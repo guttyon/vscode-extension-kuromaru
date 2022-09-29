@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "memo",
+	"name": "kuromaru",
 	"patterns": [
 		{
 			"include": "#keywords"
@@ -85,5 +85,5 @@
 			]
 		}
 	},
-	"scopeName": "source.memo"
+	"scopeName": "source.kuromaru"
 }

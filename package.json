@@ -18,14 +18,14 @@
   "contributes": {
     "languages": [{
       "id": "kuromaru",
-      "aliases": ["memo", "memo"],
+      "aliases": ["kuromaru", "kuro"],
       "extensions": [".memo"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "kurumaru",
-      "scopeName": "source.memo",
-      "path": "./syntaxes/memo.tmLanguage.json"
+      "language": "kuromaru",
+      "scopeName": "source.kuromaru",
+      "path": "./syntaxes/kuromaru.tmLanguage.json"
     }],
     "colors": [
 			{
