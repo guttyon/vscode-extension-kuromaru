@@ -1,6 +1,6 @@
 # memo-mode README
 
-This is the README for your extension "memo-mode". After writing up a brief description, we recommend including the following sections.
+Simple kuromaru memo.
 
 ## Features
 

@@ -13,10 +13,10 @@ export function activate(context: vscode.ExtensionContext) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('memo-mode.helloWorld', () => {
+	let disposable = vscode.commands.registerCommand('kuromaru.helloWorld', () => {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from memo-mode!');
+		vscode.window.showInformationMessage('Hello World from kuromaru!');
 	});
 
 	let timeout: NodeJS.Timer | undefined = undefined;
@@ -121,7 +121,7 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 	};
 	let disposable2 = vscode.languages.registerDocumentSymbolProvider(
-		{scheme: "file", language: "memo"}, 
+		{scheme: "file", language: "kuromaru"}, 
 		new SwmfConfigDocumentSymbolProvider());
 	
 	context.subscriptions.push(disposable, disposable2);

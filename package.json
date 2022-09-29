@@ -1,28 +1,29 @@
 {
-  "name": "memo-mode",
-  "displayName": "memo-mode",
+  "name": "kuromaru",
+  "displayName": "kuromaru",
   "description": "",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.71.0"
   },
+  "repository": {"url": "https://github.com/guttyon/vscode-extension-kuromaru/"},
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onLanguage:memo",
-    "onCommand:memo-mode.helloWorld"
+    "onLanguage:kuromaru",
+    "onCommand:kuromaru.helloWorld"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "languages": [{
-      "id": "memo",
+      "id": "kuromaru",
       "aliases": ["memo", "memo"],
       "extensions": [".memo"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "memo",
+      "language": "kurumaru",
       "scopeName": "source.memo",
       "path": "./syntaxes/memo.tmLanguage.json"
     }],
@@ -49,7 +50,7 @@
 		],
     "commands": [
       {
-        "command": "memo-mode.helloWorld",
+        "command": "kuromaru.helloWorld",
         "title": "Hello World"
       }
     ]
