@@ -1,0 +1,89 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "memo",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#xxx"
+		},
+		{
+			"include": "#titles"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.memo",
+				"match": "\\b(if|while|for|return)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.memo",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.memo",
+					"match": "\\\\."
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constants.digit.memo",
+					"match": "[0-9]+$"
+				},
+				{
+					"name": "constants.hex.memo",
+					"match": "0x[0-9a-fA-F]+$"
+				}
+			]			
+		},
+		"titles":{
+			"patterns": [
+				{
+					"name": "titles.memo",
+					"match": "^●[^●].*$"
+				}
+			]			
+		},
+		"subtitles":{
+			"patterns": [
+				{
+					"name": "titles.sub.memo",
+					"match": "^●+[^●].*$"
+				}
+			]			
+		},
+		"list":{
+			"patterns": [
+				{
+					"name": "list.plus.memo",
+					"match": "^＋+[^＋].*$"
+				},
+				{
+					"name": "list.item.memo",
+					"match": "^・+[^・].*$"
+				}
+			]			
+		},
+		"xxx":{
+			"patterns": [
+				{
+					"name": "xxx.xxx",
+					"match": "\\b(xxx)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.memo"
+}
