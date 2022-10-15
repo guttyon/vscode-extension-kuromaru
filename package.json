@@ -12,7 +12,7 @@
   ],
   "activationEvents": [
     "onLanguage:kuromaru",
-    "onCommand:kuromaru.helloWorld"
+    "onCommand:kuromaru.launch"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -45,13 +45,77 @@
 					"light": "#07e60755",
 					"highContrast": "#49cc7b55"
 				}
+			},
+      {
+				"id": "kuromaru.title.foregroundColor",
+				"description": "Background decoration color for large numbers",
+				"defaults": {
+					"dark": "#2fe4a855",
+					"light": "#07e60755",
+					"highContrast": "#49cc7b55"
+				}
+			},
+      {
+				"id": "kuromaru.title.backgroundColor",
+				"description": "Background decoration color for large numbers",
+				"defaults": {
+					"dark": "#2fe4a855",
+					"light": "#07e60755",
+					"highContrast": "#49cc7b55"
+				}
+			},
+      {
+				"id": "kuromaru.subtitle.foregroundColor",
+				"description": "Background decoration color for large numbers",
+				"defaults": {
+					"dark": "#2fe4a855",
+					"light": "#07e60755",
+					"highContrast": "#49cc7b55"
+				}
+			},
+      {
+				"id": "kuromaru.subtitle.backgroundColor",
+				"description": "Background decoration color for large numbers",
+				"defaults": {
+					"dark": "#2fe4a855",
+					"light": "#07e60755",
+					"highContrast": "#49cc7b55"
+				}
+			},
+      {
+				"id": "kuromaru.item.foregroundColor",
+				"description": "Background decoration color for large numbers",
+				"defaults": {
+					"dark": "#2fe4a855",
+					"light": "#07e60755",
+					"highContrast": "#49cc7b55"
+				}
 			}
-
 		],
     "commands": [
       {
-        "command": "kuromaru.helloWorld",
-        "title": "Hello World"
+        "command": "kuromaru.launch",
+        "title": "kuromaru launch"
+      }
+    ],
+    "configuration":[
+      {
+        "title": "kuromaru",
+        "properties": {
+          "kuromaru.force":{
+            "type":"boolean",
+            "default":false,
+            "description": "always use the --force option."
+          },
+          "kuromaru.title":{
+            "type":"integer",
+            "default": 33,
+            "description": "xxxxdddesu"
+          }
+        }
+      },
+      {
+
       }
     ]
   },
