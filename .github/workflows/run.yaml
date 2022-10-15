@@ -21,8 +21,8 @@ jobs:
           npm install
           npm i yo generator-code
           npm i vsce
+          npm list
       - name: Build Package
         run: npm run vsce package
       - name: view directory
         run: ls
-        
