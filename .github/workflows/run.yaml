@@ -23,6 +23,6 @@ jobs:
           npm i vsce
           npm list
       - name: Build Package
-        run: npm run vsce package
+        run: npx vsce package
       - name: view directory
         run: ls
