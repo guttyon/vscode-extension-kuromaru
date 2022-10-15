@@ -3,11 +3,26 @@ on: [push]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
+    # steps:
+    #   - run: echo "this is pen"
+    #   - uses: actions/checkout@v2
+    #   - run: |
+    #       ls -al
+    #       cd .github/workflows/
+    #       ls -al
     steps:
-      - run: echo "this is pen"
-      - uses: actions/checkout@v2
-      - run: |
-          ls -al
-          cd .github/workflows/
-          ls -al
-      
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+      - name: Install dependencies
+        run: |
+          npm install
+          npm i yo generator-code
+          npm i vsce
+      - name: Build Package
+        run: npm run vsce package
+      - name: view directory
+        run: ls
+        
