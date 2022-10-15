@@ -26,3 +26,9 @@ jobs:
         run: npx vsce package
       - name: view directory
         run: ls
+      - name: upload Archive
+        uses: actions/upload-artifact@v3
+        with:
+          name: get-vsix
+          path: kuromaru-0.0.1.vsix
+      
